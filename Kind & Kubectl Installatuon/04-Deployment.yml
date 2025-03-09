@@ -1,7 +1,8 @@
-apiVersion: apps/v1    # apps: is group and deployment is under apps group
+apiVersion: apps/v1              # apps: is group and deployment is under apps group
 kind: Deployment
 metadata:
   name: nginx-deployment
+  namespace: nginx-ns 
   labels:
     app: nginx
 spec:                            # deployment specification
