@@ -7,7 +7,7 @@ metadata:
   
 spec:
   containers:
-  - name: nginx
+  - name: nginx     #this is your apps name that use in variouus yml file 
     image: nginx:1.14.2    # from docker hub image
     ports:
     - containerPort: 80
