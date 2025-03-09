@@ -1,1 +1,14 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  namespace: nginx-ns   # write namespace name here
+  
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2    # from docker hub image
+    ports:
+    - containerPort: 80
 
