@@ -1,12 +1,12 @@
-apiVersion: apps/v1              # apps: is group and deployment is under apps group
+apiVersion: apps/v1                   # apps: is group and deployment is under apps group
 kind: Deployment
 metadata:
   name: nginx-deployment
   namespace: nginx-ns 
-  labels:
+  labels:                            # deployment label to select service ti identify
     app: nginx
     
-spec:                            # deployment specification
+spec:                                # deployment specification
   replicas: 3
   selector:
     matchLabels:
